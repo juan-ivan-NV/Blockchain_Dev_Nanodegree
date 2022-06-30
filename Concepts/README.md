@@ -4,4 +4,8 @@ Many of the concepts that Nakamoto wrote about - from building in privacy to ens
 
 <center>
 <img src='../Images/B_Framework.PNG'/>
-<figcaption>Hashing Overview</figcaption></center>
+<figcaption>Blockchain oveview</figcaption></center>
+
+<center>
+<img src='../Images/Hashing.PNG'/>
+<figcaption>Hashing</figcaption></center>
