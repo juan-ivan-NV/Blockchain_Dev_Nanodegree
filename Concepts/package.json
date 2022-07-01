@@ -1,0 +1,16 @@
+{
+  "name": "concepts",
+  "version": "1.0.0",
+  "description": "Many of the concepts that Nakamoto wrote about - from building in privacy to ensuring the system grows - extend beyond Bitcoin and even beyond just cryptocurrency. These are concepts that are fundamental to building a robust blockchain for any application.",
+  "main": "hashing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "crypto-js": "^3.1.9-1"
+  }
+}
