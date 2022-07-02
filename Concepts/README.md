@@ -9,3 +9,28 @@ Many of the concepts that Nakamoto wrote about - from building in privacy to ens
 <center>
 <img src='../Images/Hashing.PNG'/>
 <figcaption>Hashing</figcaption></center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run scripts for ...
+
+### Concepts
+
+docker build -t hashapp .
+docker run hashapp
