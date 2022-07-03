@@ -33,4 +33,4 @@ Run scripts for ...
 ### Concepts
 
 docker build -t hashapp .
-docker run hashapp
+Docker run --rm -ti hashapp sh
