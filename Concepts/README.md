@@ -34,3 +34,6 @@ Run scripts for ...
 
 docker build -t hashapp .
 Docker run --rm -ti hashapp sh
+
+
+good documentation to run <a href = "https://stackoverflow.com/questions/48001082/oci-runtime-exec-failed-exec-failed-executable-file-not-found-in-path">docker bash</a>
