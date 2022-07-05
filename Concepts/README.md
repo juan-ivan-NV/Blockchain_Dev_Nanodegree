@@ -11,6 +11,13 @@ Many of the concepts that Nakamoto wrote about - from building in privacy to ens
 <figcaption>Hashing</figcaption></center>
 
 
+Blockchain is a distributed peer-to-peer network.
+
+* Peer-to-Peer Network: A network of computers that allows information to be shared across users.
+
+* Distributed Network: A network that allows information to spread out across many users.
+
+* Memory pool (also known as the mempool) is the waiting place for transactions before they enter the blockchain.
 
 
 
@@ -25,10 +32,7 @@ Many of the concepts that Nakamoto wrote about - from building in privacy to ens
 
 
 
-
-
-
-Run scripts for ...
+## Run scripts for ...
 
 ### Concepts
 
