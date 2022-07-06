@@ -19,11 +19,18 @@ Blockchain is a distributed peer-to-peer network.
 
 * Memory pool (also known as the mempool) is the waiting place for transactions before they enter the blockchain.
 
+* Consensus is an idea implemented through many different algorithms. Things like proof of work, proof of stake, and DBFT are all consensus algorithms.
 
 
+The idea behind <strong>proof of work</strong> is that whoever puts in the most work to contribute to the system is the most trustworthy.
 
+* It consumes a lot of energy.
 
+* There are monopolies in mining with this algorithm.
 
+The key idea behind <strong>proof of stake</strong> is that it focuses on giving votes to members, depending on how much stake they have in the success of the chain.
+
+<strong>Delegated Byzantine Fault Tolerance</strong> or DBFT tries to achieve consensus by assigning roles to nodes to help coordinate consensus.
 
 
 
