@@ -33,9 +33,23 @@ The key idea behind <strong>proof of stake</strong> is that it focuses on giving
 <strong>Delegated Byzantine Fault Tolerance</strong> or DBFT tries to achieve consensus by assigning roles to nodes to help coordinate consensus.
 
 
+## Managing Blockchain Transactions 
+
+Like a social security number, a bank account, a drivers license, or a club membership, your blockchain identity is how you establish yourself in the world.
+
+<center>
+<img src='../Images/key.PNG'/>
+<figcaption>ECDSA algorithm to generate a public key based on the private key</figcaption>
+</center>
 
 
+Key Terms.
 
+* Wallet Address: A unique identifier for your wallet.
+
+* Private Key: A secret number that allows you to spend bitcoin from your wallet.
+
+* Public Key: Publicly shareable key that cannot be used to spend bitcoin.
 
 
 
