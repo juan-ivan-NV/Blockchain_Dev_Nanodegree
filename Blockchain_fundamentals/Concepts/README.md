@@ -47,11 +47,13 @@ Key Terms.
 
 * Wallet Address: A unique identifier for your wallet.
 
-* Private Key: A secret number that allows you to spend bitcoin from your wallet.
+* Private Key: A secret number that allows you to spend bitcoin from your wallet, this is normally a 256-bit random number between 1 and 2^256.
 
 * Public Key: Publicly shareable key that cannot be used to spend bitcoin.
 
+Entropy: Lack of order or predictability. The degree of disorder or randomness in the system.
 
+<img src='../Images/keys.PNG'/>
 
 ## Run scripts for ...
 
