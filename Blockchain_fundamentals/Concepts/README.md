@@ -55,6 +55,10 @@ Entropy: Lack of order or predictability. The degree of disorder or randomness i
 
 <img src='../Images/keys.PNG'/>
 
+
+## Blockchain core testnet
+
+
 ## Run scripts for ...
 
 ### Concepts
