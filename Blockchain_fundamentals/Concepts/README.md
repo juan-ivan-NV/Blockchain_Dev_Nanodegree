@@ -58,6 +58,21 @@ Entropy: Lack of order or predictability. The degree of disorder or randomness i
 
 ## Blockchain core testnet
 
+* Bitcoin: Network of bitcoin users creating and validating transactions.
+
+* Bitcoin Core: Implementation of bitcoin that encompasses all of the software behind bitcoin.
+
+* Debug Console: Tool that allows you to interact with data on the bitcoin blockchain.
+
+Core nnetworks.
+
+* Bitcoin Mainnet: Primary Network where live transactions take place.
+
+* Bitcoin Testnet: Alternative Bitcoin blockchain that provides a test environment for applications.
+
+* Bitcoin Regnet: Alternative test network for testing bitcoin applications.
+
+<a href = "https://bitcoin.org/en/bitcoin-core/features/requirements">Bitcoin core documentation</a>
 
 ## Run scripts for ...
 
