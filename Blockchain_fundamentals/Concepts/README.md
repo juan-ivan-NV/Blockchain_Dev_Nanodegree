@@ -74,6 +74,8 @@ Core nnetworks.
 
 <a href = "https://bitcoin.org/en/bitcoin-core/features/requirements">Bitcoin core documentation</a>
 
+<a href = "https://www.youtube.com/watch?v=CxDSrYuzmyQ">Bitcoin core testnet for windows</a>
+
 ## Run scripts for ...
 
 ### Concepts
