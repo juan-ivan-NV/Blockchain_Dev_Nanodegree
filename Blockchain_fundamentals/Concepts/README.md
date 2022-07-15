@@ -76,6 +76,16 @@ Core nnetworks.
 
 <a href = "https://www.youtube.com/watch?v=CxDSrYuzmyQ">Bitcoin core testnet for windows</a>
 
+Get your coins from the <a href = "https://bitcoinfaucet.uo1.net/">Bitcoin TestNet Sandbox Faucet</a>
+
+Get your coins from the <a href = "https://live.blockcypher.com/btc-testnet/">BlockCypher Block Explorer</a>
+
+Access Networks:
+
+* Access testnet: testnet = 1 in bitcoin.conf file
+
+* Access regnet: regtest = 1 in bitcoin.conf file
+
 ## Run scripts for ...
 
 ### Concepts
