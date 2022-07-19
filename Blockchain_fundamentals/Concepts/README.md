@@ -96,6 +96,11 @@ Access Networks:
 
 * Nonce: A nonce (stands for “number only used once") is a number used in bitcoin mining. The blockchain miners are solving for the nonce that when added to a hashed block, and those 2 values are rehashed, will solve the mining puzzle.
 
+<img src='../Images/transaction-data-model.png'/>
+
+<img src='../Images/bitcoin-scripts.png'/>
+
+
 ## Run scripts for ...
 
 ### Concepts
