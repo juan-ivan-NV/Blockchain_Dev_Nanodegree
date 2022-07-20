@@ -98,6 +98,8 @@ Access Networks:
 
 <img src='../Images/transaction-data-model.png'/>
 
+* UTXO: unspent transaction output.
+
 <img src='../Images/bitcoin-scripts.png'/>
 
 
