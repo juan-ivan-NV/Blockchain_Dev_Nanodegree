@@ -102,6 +102,14 @@ Access Networks:
 
 <img src='../Images/bitcoin-scripts.png'/>
 
+## Bitcoin core 
+
+Transactions command: <code>listunspent</code>
+
+get a transaction command: <code>gettxout</code>
+
+create transaction command: <code>createrawtransaction '[{"txid":"TXID","vout": VOUT}]’’{“to_address”:amount1, “from_address”:amount2}’</code>
+
 
 ## Run scripts for ...
 
