@@ -104,12 +104,23 @@ Access Networks:
 
 ## Bitcoin core 
 
-Transactions command: <code>listunspent</code>
+transaction recipe
 
-get a transaction command: <code>gettxout</code>
+View all unspent confirmed UTXO in the wallet: <code>listunspent</code>
 
-create transaction command: <code>createrawtransaction '[{"txid":"TXID","vout": VOUT}]’’{“to_address”:amount1, “from_address”:amount2}’</code>
+View Details about a Specific UTXO: <code>gettxout "txid" "vout"</code>
 
+Create a Raw Transaction: <code>createrawtransaction '[{"txid": "txid", "vout":x}]' '{"to_address":0.000xxxx, "from_address":0.000xxxx}'</code>
+
+Decode the Raw Transaction (to double-check it went through correctly): <code>decoderawtransaction "hexstring"</code>
+
+Sign the Raw Transaction: <code>signrawtransactionwithwallet "hexstring"</code>
+
+Decode again to check signings: <code>decoderawtransaction "hexstring"</code>
+
+Submit the Raw Transaction to the Network: <code>sendrawtransction "hexstring"</code>
+
+Query the TxID of the Transaction we sent: <code>gettransaction "txid"</code>
 
 ## Run scripts for ...
 
