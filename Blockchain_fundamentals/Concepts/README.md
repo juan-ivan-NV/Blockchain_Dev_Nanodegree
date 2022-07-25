@@ -126,8 +126,15 @@ Query the TxID of the Transaction we sent: <code>gettransaction "txid"</code>
 
 ### Concepts
 
-docker build -t hashapp .
-Docker run --rm -ti hashapp sh
+dir my_apps
+
+<code>docker build -t hashapp . </code>
+<code>Docker run --rm -ti hashapp sh </code>
+
+dir data_model
+
+<code>docker build -t simplechain . </code>
+<code>docker run --rm -ti simplechain sh </code>
 
 
 good documentation to run <a href = "https://stackoverflow.com/questions/48001082/oci-runtime-exec-failed-exec-failed-executable-file-not-found-in-path">docker bash</a>
