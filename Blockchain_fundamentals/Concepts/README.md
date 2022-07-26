@@ -122,6 +122,10 @@ Submit the Raw Transaction to the Network: <code>sendrawtransction "hexstring"</
 
 Query the TxID of the Transaction we sent: <code>gettransaction "txid"</code>
 
+## Proof of Existence
+
+Proof of Existence: The concept that publicly proving and authenticating any digital asset on the blockchain by verifying its hash.
+
 ## Run scripts for ...
 
 ### Concepts
@@ -135,6 +139,11 @@ dir data_model
 
 <code>docker build -t simplechain . </code>
 <code>docker run --rm -ti simplechain sh </code>
+
+dir digital_assets
+
+<code>docker build -t digitalassets . </code>
+<code>docker run --rm -ti digitalassets sh </code>
 
 
 good documentation to run <a href = "https://stackoverflow.com/questions/48001082/oci-runtime-exec-failed-exec-failed-executable-file-not-found-in-path">docker bash</a>
