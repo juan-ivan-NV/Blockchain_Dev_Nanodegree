@@ -145,5 +145,12 @@ dir digital_assets
 <code>docker build -t digitalassets . </code>
 <code>docker run --rm -ti digitalassets sh </code>
 
+dir digital_assets/node-express
+
+<code>docker build -t node-express:1.0.0 . </code>
+<code>docker run -p 3000:3000 node-express:1.0.0 </code>
+<code>docker ps </code>
+<code>docker stop **(first 2 container name characters) </code>
+
 
 good documentation to run <a href = "https://stackoverflow.com/questions/48001082/oci-runtime-exec-failed-exec-failed-executable-file-not-found-in-path">docker bash</a>
