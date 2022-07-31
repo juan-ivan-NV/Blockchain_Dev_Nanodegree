@@ -30,3 +30,10 @@ Create a test application that allows the user to register stars, and track the 
 
 7.- The application will allow us to retrieve the Star objects belong to an owner (wallet address). This information should be human readable so it shouldn't be encoded.
 
+
+
+
+<code>docker build -t node-express:1.0.0 . </code>
+<code>docker run -p 8000:8000 node-express:1.0.0 </code>
+<code>docker ps </code>
+<code>docker stop **(first 2 container name characters) </code>
