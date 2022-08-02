@@ -210,8 +210,17 @@ class Blockchain {
         let errorLog = [];
         return new Promise(async (resolve, reject) => {
             for (let i = 1; i < self.chain.length; i++){
-                
+                let block = self.chain[i];
+                if(!(await block.validate())){
+                    errorLog.push(`ERROR: Block hash couldn't be validated at height ${i}`);
+                }
+                let previousBlockHash = self.chain[i - 1];
+                if(previousBlockHash !== block.previousBlockHash){
+                    errorLog.push(`ERROR: Hash is different in current block ${i} and previous block ${i-1}`);
+                }
             }
+            if(errorLog.length > 0){resolve(errorLog);} 
+            else {resolve("Chain validated successfully");}
         });
     }
 
