@@ -125,11 +125,13 @@ class Blockchain {
             let timeMessage = parseInt(message.split(':')[1]);
             let currentTime = parseInt(new Date().getTime().toString().slice(0, -3));
             
-            if(currentTime - timeMessage > 300) 
+            if(currentTime - timeMessage > 900) {
                 reject("Request rejected due time out.");
-            if(!bitcoinMessage.verify(message, address, signature)) 
+            }    
+            if(!bitcoinMessage.verify(message, address, signature)){
                 reject("Request for message verification failed.");
-
+            } 
+                
             let block = new BlockClass.Block({owner: address, data:star});
             let addBlock = await self._addBlock(block);
 
@@ -186,7 +188,7 @@ class Blockchain {
 
             for (let i = 1; i < self.chain.length; i++){
                 let block = self.chain[i];
-                let data  = await block.getBData();
+                let data  = block.getBData();
                 if(data.owner === address){
                     stars.push(data);
                 } else {
