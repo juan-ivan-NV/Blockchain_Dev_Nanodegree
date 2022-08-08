@@ -64,29 +64,31 @@ class Blockchain {
 
     _addBlock(block) {
         let self = this;
-        return new Promise(async (resolve, reject) => {
-           let currentBlock = block;
-           let currentHeight = self.height; 
-           currentBlock.time = new Date().getTime().toString().slice(0, -3);
+        try {
+            return new Promise(async (resolve, reject) => {
+                let currentBlock = block;
+                let currentHeight = self.height;
+                currentBlock.time = new Date().getTime().toString().slice(0, -3);
 
-           if (currentHeight > 0) {
-            currentBlock.height = currentHeight + 1; 
-            let previousBlock = self.chain[self.height];
-            currentBlock.previousBlockHash = previousBlock.hash;
-            currentBlock.hash = SHA256(JSON.stringify(currentBlock)).toString();
-            self.chain.push(currentBlock);
-            self.height += 1;
-            resolve(currentBlock);
-        } else {
-            currentBlock.height = currentHeight + 1;
-            currentBlock.hash = SHA256(JSON.stringify(currentBlock)).toString(); 
-            self.chain.push(currentBlock);
-            self.height += 1;
-            resolve(currentBlock);
-           }
-        }).catch((error) => {
+                if (currentHeight > 0) {
+                    currentBlock.height = currentHeight + 1;
+                    let previousBlock = self.chain[self.height];
+                    currentBlock.previousBlockHash = previousBlock.hash;
+                    currentBlock.hash = SHA256(JSON.stringify(currentBlock)).toString();
+                    self.chain.push(currentBlock);
+                    self.height += 1;
+                    resolve(currentBlock);
+                } else {
+                    currentBlock.height = currentHeight + 1;
+                    currentBlock.hash = SHA256(JSON.stringify(currentBlock)).toString();
+                    self.chain.push(currentBlock);
+                    self.height += 1;
+                    resolve(currentBlock);
+                }
+            });
+        } catch (error) {
             console.log(`ERROR: ${error}`);
-        });
+        }
     }
 
     /**
@@ -99,8 +101,8 @@ class Blockchain {
      */
     requestMessageOwnershipVerification(address) {
         return new Promise((resolve) => {
-            let msgTime = new Date().getTime().toString().slice(0, 3);
-            const msg = `${address}:${msgTime}:starRedistry`;
+            let msgTime = new Date().getTime().toString().slice(0, -3);
+            const msg = `${address}:${msgTime}:starRegistry`;
             resolve(msg);
         });
     }
