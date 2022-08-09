@@ -26,3 +26,13 @@ Create DApps (Decentralized Applications) on the ethereum network.
 DApps run on decentralized networks powered by a network of computers. Standard Applications run on the computation of centralized networks owned by companies.
 
 <a href="https://dappradar.com/">DApp radar:</a> In this site there many examples of applications built on the ETH network. 
+
+
+## Faucets for ETH testnets
+
+Many issues
+https://www.rinkeby.io/#faucet
+
+Another option
+https://faucets.chain.link/rinkeby
+
