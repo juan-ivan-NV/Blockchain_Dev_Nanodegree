@@ -10,7 +10,7 @@
 
 <a href="https://web3js.readthedocs.io/en/v1.7.5/">web3.js:</a> A collection of libraries that allow you to interact with a local or remote Ethereum node. 
 
-<a href="https://infura.io/">INFURA:</a> Gives you access to the Ethereum network without running your own local node. 
+<a href="https://infura.io/">INFURA:</a> It allows you to connect to the Ethereum blockchain without running a full node. It's a lightweight alternative to downloading the entire blockchain to your local device. It makes the connection that allows you to use the functionality provided by web3. 
 
 <a href="https://trufflesuite.com/ganache/">ganache:</a> Application for launching local Ethereum blockchain instances. 
 
@@ -27,6 +27,10 @@ DApps run on decentralized networks powered by a network of computers. Standard 
 
 <a href="https://dappradar.com/">DApp radar:</a> In this site there many examples of applications built on the ETH network. 
 
+
+## EOAs (externally owned accounts) vs CA (contract accounts).
+
+Externally owned accounts are owned by users with private keys while contract accounts are held by smart contracts. Transaction counts on EOA's refer to the number of transactions that user made while on CA's it refers to the number of times it has deployed other smart contracts. Many of the contents of these accounts are the same but contract accounts also hold the code from the deployed contract.
 
 ## Faucets for ETH testnets
 
