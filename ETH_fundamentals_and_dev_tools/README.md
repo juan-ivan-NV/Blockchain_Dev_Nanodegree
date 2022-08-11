@@ -12,7 +12,9 @@
 
 <a href="https://infura.io/">INFURA:</a> It allows you to connect to the Ethereum blockchain without running a full node. It's a lightweight alternative to downloading the entire blockchain to your local device. It makes the connection that allows you to use the functionality provided by web3. 
 
-<a href="https://trufflesuite.com/ganache/">ganache:</a> Application for launching local Ethereum blockchain instances. 
+<a href="https://trufflesuite.com/ganache/">Ganache:</a> This tool allows you to set up your own local blockchain. It comes preloaded with 10 accounts, each containing 100 ether. This gives you a way to make test transactions between many accounts without needing to worry about stocking up on test ether or paying for real ether.
+
+<code>npm install -g ganache-cli</code>
 
 <a href="https://trufflesuite.com">TRUFFLE:</a> A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer. 
 
