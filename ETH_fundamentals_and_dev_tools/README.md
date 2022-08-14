@@ -20,6 +20,8 @@
 
 <a href="https://geth.ethereum.org/">geth:</a> A golang implementation of the Ethereum blockchain used to set up a local full Ethereum node. 
 
+<a href="https://ethstats.net/">Ethstats:</a> Here you can check out some of the current data about the Ethereum network.. 
+
 
 Objetives:
 
@@ -33,6 +35,16 @@ DApps run on decentralized networks powered by a network of computers. Standard 
 ## EOAs (externally owned accounts) vs CA (contract accounts).
 
 Externally owned accounts are owned by users with private keys while contract accounts are held by smart contracts. Transaction counts on EOA's refer to the number of transactions that user made while on CA's it refers to the number of times it has deployed other smart contracts. Many of the contents of these accounts are the same but contract accounts also hold the code from the deployed contract.
+
+## More concepts
+
+GAS Price: Price per unit of gas you are willing to pay for executing the code in your smart contract. 
+
+Gas is needed to incentivize miners to pick up and validate transactions. It's a small fee paid for the cost of each bit of code executed to complete a smart contract. While the gas is specific to execution costs, it can be converted to its equivalent value in ether and given to the miner as reward for their effort.
+
+GAS Limit: Maximum amount of gas a sender is willing to pay for a given transaction.
+
+
 
 ## Faucets for ETH testnets
 
