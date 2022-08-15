@@ -6,8 +6,8 @@ var web3 = new Web3('HTTP://127.0.0.1:7545');
 
 
 // -- Step 2: Set the sending and receiving addresses for the transaction.
-var sendingAddress = '0xCff417f3DFxxxxxxxxxxxxxxxxxxxxxxxx4E432F';
-var receivingAddress = '0x557a21546xxxxxxxxxxxxxxxxxxxxxxxxx1689F369e4';
+var sendingAddress = '0xD609xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxAE';
+var receivingAddress = '0x99xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxE19';
 
 
 // -- Step 3: Check the balances of each address
@@ -24,7 +24,7 @@ var rawTransaction ={
     to: receivingAddress,
     gasPrice: web3.utils.toHex(20000000),
     gasLimit: web3.utils.toHex(30000),
-    value: web3.utils.toHex(110),
+    value: web3.utils.toHex(100),
     data: web3.utils.toHex("")
 };
 
@@ -42,14 +42,14 @@ Sign the Transaction
 ##########################*/
 
 // -- Step 7: Sign the transaction with the Hex value of the private key of the sender
-var privateKey = '3e7d981xxxxx66xxxxxxxxxxxxxxxxxxxxxxxxxxxxx3592aa08d1502';
+var privateKey = 'bcfef8xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxa';
 var senderPrivateKeyHex = new Buffer.from(privateKey,'hex');
 var transaction = new EthereumTx(rawTransaction);
 transaction.sign(senderPrivateKeyHex);
 
 
 /*#########################################
-Send the transaction to the network
+Send the transaction to the networks
 #########################################*/
 
 
