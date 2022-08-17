@@ -44,6 +44,12 @@ Gas is needed to incentivize miners to pick up and validate transactions. It's a
 
 GAS Limit: Maximum amount of gas a sender is willing to pay for a given transaction.
 
+# Smart Contracts with Solidity
+
+<a href="https://docs.soliditylang.org/en/v0.4.24/">Solidity documentation</a> 
+
+<a href="https://remix.ethereum.org/">Remix</a> To develop Solidity contracts.
+
 
 
 ## Faucets for ETH testnets
