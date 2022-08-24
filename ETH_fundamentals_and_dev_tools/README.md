@@ -51,6 +51,21 @@ GAS Limit: Maximum amount of gas a sender is willing to pay for a given transact
 <a href="https://remix.ethereum.org/">Remix</a> To develop Solidity contracts.
 
 
+# Different Available Token Standards
+
+For more information click <a href="https://eips.ethereum.org/erc">here.</a>
+
+* ERC-20
+
+* ERC-223
+
+* ERC-621
+
+* ERC-721
+
+* ERC-827
+
+
 
 ## Faucets for ETH testnets
 
