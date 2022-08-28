@@ -2,7 +2,7 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = "<Infura PROJECT ID>";
 //
 // const fs = require('fs');
-const mnemonic = "license city away volcano armed disagree piece region bubble actress else reject";
+const mnemonic = "xxxxxxxxxxxxxxxxxxxxxxxx";
 
 module.exports = {
 

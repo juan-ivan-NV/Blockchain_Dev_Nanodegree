@@ -1,13 +1,10 @@
-pragma solidity ^0.8.0;
+pragma solidity >=0.4.24;
 
-import "../../node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
-import "../../node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
+import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+//C:\Users\coldc\Documents\github_jinb\Blockchain_Dev_Nanodegree\ETH_fundamentals_and_dev_tools\ERC20Truffle\node_modules\openzeppelin-solidity\contracts\token\ERC20\ERC20.sol
 
-contract SampleToken is ERC20Detailed, ERC20 {
-
-    constructor(string memory _name, string memory _symbol, uint8 _decimals, uint _initialSupply) 
-    ERC20Detailed(_name, _symbol, _decimals) public {
-        require(_initialSupply > 0, "INITIAL_SUPPLY has to be greater than 0");
-        _mint(msg.sender, _initialSupply);
+contract SampleToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("SampleToken", "ST") {
+        _mint(msg.sender, initialSupply);
     }
 }
