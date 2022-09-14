@@ -23,3 +23,10 @@ Sequence diagram: - Integration between objects in the sequence in which they ta
 <a href = "https://www.lucidchart.com/pages/">Lucidchart</a>
 
 <a href = "https://app.diagrams.net/">draw.io</a>
+
+# Supply Chains with Smart Contracts
+
+<a href = "https://docs.soliditylang.org/en/v0.4.21/types.html">Types</a> Solidity is a statically typed language, which means that the type of each variable (state and local) needs to be specified.
+
+<a href = "https://docs.soliditylang.org/en/v0.4.24/common-patterns.html">Common Patterns</a> The recommended method of sending funds after an effect is using the withdrawal pattern.
+
