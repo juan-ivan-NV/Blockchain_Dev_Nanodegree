@@ -30,3 +30,6 @@ Sequence diagram: - Integration between objects in the sequence in which they ta
 
 <a href = "https://docs.soliditylang.org/en/v0.4.24/common-patterns.html">Common Patterns</a> The recommended method of sending funds after an effect is using the withdrawal pattern.
 
+<center>
+<img src='../Images/screen-shot-2018-09-21-at-3.47.39-pm.png'/>
+<figcaption>Script: Extending the Supply Chain</figcaption></center>
