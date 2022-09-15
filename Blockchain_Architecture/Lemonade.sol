@@ -30,6 +30,12 @@ contract LemonadeStand {
     event Sold (uint sku);
     
     // Modifier: Only owner to see if msg.sender == owner of the contract
+    modifier onlyOwner() {
+        require(msg.sender ==owner);
+        _;
+    }
+    
+    // Define a modifier thast defines the Caller
     modifier verifyCaller (address _address) {
         require(msg.sender == owner);
         _;
@@ -52,4 +58,51 @@ contract LemonadeStand {
         require(items[_sku].state == State.Sold);
         _;
     }
+
+    // Constructor function
+    constructor() public {
+        owner = msg.sender;
+        skuCount = 0;
+    }
+
+    function addItem(string _name, uint _price) onlyOwner public {
+        // Increment sku
+        skuCount = skuCount + 1;
+
+        // Emit the appropriate event
+        emit ForSale(skuCount);
+        // Add the new item into inventory and mark it for sale
+        items[skuCount] = Item({name: _name, sku: skuCount, price: _price, state: State.ForSale, seller: msg.sender, buyer: 0});
+        }
+    
+    function buyItem(uint sku) forSale(sku) paidEnough(items[sku].price) public payable {
+        address buyer = msg.sender;
+        uint price = items[sku].price;
+        //update buyer
+        items[sku].buyer = buyer;
+        // update state
+        items[sku].state = State.Sold;
+        // transfer money to seller
+        items[sku].seller.transfer(price);
+        // emit the appropriate event
+        emit Sold(sku);
+    }
+
+    // get a specific item on the supply chain
+    function fetchItem(uint _sku) public view returns (string name, uint sku, uint price, string stateIs, address seller, address buyer) {
+        uint state;
+        name =items[_sku].name;
+        sku = items[_sku].sku;
+        price = items[_sku].price;
+        state = uint(items[_sku].state);
+        if(state == 0) {
+            stateIs = "For Sale";
+        }
+        if(state == 1) {
+            stateIs = "Sold";
+        }
+        seller = items[_sku].seller;
+        buyer = items[_sku].buyer;
+    }
+
 }
