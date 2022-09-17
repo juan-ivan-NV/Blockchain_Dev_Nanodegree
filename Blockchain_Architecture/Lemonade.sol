@@ -31,7 +31,7 @@ contract LemonadeStand {
     
     // Modifier: Only owner to see if msg.sender == owner of the contract
     modifier onlyOwner() {
-        require(msg.sender ==owner);
+        require(msg.sender == owner);
         _;
     }
     
@@ -59,6 +59,14 @@ contract LemonadeStand {
         _;
     }
 
+    // Define a modifier that checks the price and refounds the remaining balance
+    modifier checkValue(uint _sku) {
+        _;
+        uint _price = items[_sku].price;
+        uint amountToRefund = msg.value - _price;
+        items[_sku].buyer.transfer(amountToRefund);
+    }
+
     // Constructor function
     constructor() public {
         owner = msg.sender;
@@ -75,17 +83,24 @@ contract LemonadeStand {
         items[skuCount] = Item({name: _name, sku: skuCount, price: _price, state: State.ForSale, seller: msg.sender, buyer: 0});
         }
     
-    function buyItem(uint sku) forSale(sku) paidEnough(items[sku].price) public payable {
-        address buyer = msg.sender;
-        uint price = items[sku].price;
-        //update buyer
-        items[sku].buyer = buyer;
-        // update state
-        items[sku].state = State.Sold;
-        // transfer money to seller
-        items[sku].seller.transfer(price);
-        // emit the appropriate event
-        emit Sold(sku);
+    // Define a function 'buyItem' that allows one to purchase an item from the inventory
+function buyItem(uint sku) public payable
+    // Call modifier to check if sku is for sale
+    forSale(sku)
+    // Call modifer to check if buyer has paid enough
+    paidEnough(items[sku].price)
+    // Call modifer to send any excess ether back to buyer
+    checkValue(sku) {
+    address buyer = msg.sender;
+    uint  price = items[sku].price;
+    // Update buyer
+    items[sku].buyer = buyer;
+    // Update state
+    items[sku].state = State.Sold;
+    // Transfer money to seller
+    items[sku].seller.transfer(price);
+    // emit the appropriate event
+    emit Sold(sku);
     }
 
     // get a specific item on the supply chain

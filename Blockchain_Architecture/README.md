@@ -32,4 +32,9 @@ Sequence diagram: - Integration between objects in the sequence in which they ta
 
 <center>
 <img src='../Images/screen-shot-2018-09-21-at-3.47.39-pm.png'/>
-<figcaption>Script: Extending the Supply Chain</figcaption></center>
+<figcaption>Script: Extending the Supply Chain with shipping feature</figcaption></center>
+
+
+<center>
+<img src='../Images/screen-shot-2018-09-21-at-3.51.32-pm.png'/>
+<figcaption>Script: Extending the Supply Chain with give a refound feature</figcaption></center>
