@@ -33,7 +33,7 @@ Sequence diagram: - Integration between objects in the sequence in which they ta
 <center>
 <img src='../Images/screen-shot-2018-09-21-at-3.47.39-pm.png'/>
 <figcaption>Script: Extending the Supply Chain with shipping feature</figcaption></center>
-
+pla
 
 <center>
 <img src='../Images/screen-shot-2018-09-21-at-3.51.32-pm.png'/>
