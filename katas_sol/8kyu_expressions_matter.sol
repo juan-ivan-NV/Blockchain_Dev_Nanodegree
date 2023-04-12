@@ -22,6 +22,25 @@ contract Kata {
   }
 
   /*
+  // best solution
+
+  // SPDX-License-Identifier: BSD-2-Clause
+pragma solidity ^0.8.16;
+
+contract Kata {
+  function expressionMatter(int a, int b, int c) public pure returns (int) {
+    // your code here
+    int[4] memory max = [a*b*c, a+b+c, (a+b)*c, a*(b+c)];
+    int ans = 0;
+    for(uint i = 0; i < 4; ++i){
+      if(max[i] > ans) ans = max[i];
+    }
+    return ans;
+  }
+}
+   */
+
+  /*
   // testing code
   // SPDX-License-Identifier: BSD-2-Clause
 const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
